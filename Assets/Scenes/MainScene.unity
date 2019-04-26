@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44988793, g: 0.49720937, b: 0.56085455, a: 1}
+  m_IndirectSpecularColor: {r: 0.44747156, g: 0.4929307, b: 0.5511531, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -311,13 +311,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170076733}
-  m_LocalRotation: {x: 0.9363666, y: -0.07267118, z: -0.271261, w: 0.21060383}
+  m_LocalRotation: {x: 0.9017936, y: -0.09488252, z: -0.37031513, w: 0.20157476}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 20.792002, y: -144.82101, z: -164.46701}
+  m_LocalEulerAnglesHint: {x: 17.055, y: -132.38501, z: -160.41801}
 --- !u!1 &219965465 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100016, guid: 85baa136bb6d440bc9ec023bee640934,
@@ -2064,7 +2064,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &1571015409
 GameObject:
