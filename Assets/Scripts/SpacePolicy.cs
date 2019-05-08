@@ -22,7 +22,7 @@ public class FrontSpacePolicy : PolicyTransform
     public override TransformParams Transform(Vector3 masterPos)
     {
         TransformParams res = new TransformParams();
-        res.position = masterPos + new Vector3(0, -16.66f, 0);
+        res.position = masterPos + new Vector3(0, -33.32f, 0);
         res.speedScale = Vector3.one;
         res.ZfrontierMin = 0.0f;
         res.ZfrontierMax = 0.0f;
@@ -37,7 +37,7 @@ public class BackSpacePolicy : PolicyTransform
     public override TransformParams Transform(Vector3 masterPos)
     {
         TransformParams res = new TransformParams();
-        res.position = masterPos + new Vector3(0, -16.66f, -6);
+        res.position = masterPos + new Vector3(0, -33.32f, -20);
         res.speedScale = Vector3.one;
         res.invertStencil = false;
         res.ZfrontierMin = -1.0f;
@@ -52,9 +52,9 @@ public class MiddleSpacePolicy : PolicyTransform
     {
         TransformParams res = new TransformParams();
         Vector3 intermediate = masterPos;
-        intermediate.z *= 7.0f;
-        res.position = intermediate + new Vector3(0, -16.66f, 0);
-        res.speedScale = new Vector3(1, 1, 1.0f / 6.0f); //0.142857f);
+        intermediate.z *= 21.0f;
+        res.position = intermediate + new Vector3(0, -33.32f, 0);
+        res.speedScale = new Vector3(1, 1, 1.0f / 14.0f); //0.142857f);
         res.invertStencil = true;
         res.ZfrontierMin = -1.0f;
         res.ZfrontierMax = 0.0f;
@@ -68,8 +68,8 @@ public class SideSpacePolicy : PolicyTransform
     {
         TransformParams res = new TransformParams();
         Vector3 intermediate = masterPos;
-        intermediate.z *= 7.0f;
-        res.position = intermediate + new Vector3(0, -16.66f, 0);
+        intermediate.z *= 21.0f;
+        res.position = intermediate + new Vector3(0, -33.32f, 0);
         res.speedScale = Vector3.one;
         res.invertStencil = false;
         res.ZfrontierMin = -1.0f;

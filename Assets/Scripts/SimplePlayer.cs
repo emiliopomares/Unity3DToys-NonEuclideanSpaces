@@ -14,7 +14,7 @@ public class SimplePlayer : MonoBehaviour
     float startMouseX;
     float previousMouseX;
     public float mouseFactor = 1.0f;
-    float keyboardRotation = 0.0f;
+    float keyboardRotation = 180.0f;
     void Start()
     {
         r = this.GetComponent<Rigidbody>();
@@ -57,7 +57,7 @@ public class SimplePlayer : MonoBehaviour
 
         float y = r.velocity.y;
         Vector3 newVel = new Vector3(0, y, 0);
-        this.transform.rotation = Quaternion.Euler(new Vector3(0, (Input.mousePosition.x - startMouseX) * mouseFactor + keyboardRotation));
+        this.transform.rotation = Quaternion.Euler(new Vector3(0, keyboardRotation));
 
         if(Input.GetKey(KeyCode.LeftArrow))
         {
